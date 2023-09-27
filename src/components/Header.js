@@ -10,7 +10,7 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className=" text-white mb-0">
-                Free Shipping over $100 & Free Returns
+                Free Shipping over 2kg of recyclable Items
               </p>
             </div>
             <div className="col-6">
@@ -29,7 +29,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Apna Bazaar</Link>
+                <Link className="text-white">Eco Cycle Connect</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -37,8 +37,8 @@ const Header = () => {
                 <input
                   type="text"
                   className="form-control py-2"
-                  placeholder="Search Products Here"
-                  aria-label="Search Products Here"
+                  placeholder="What you want to recycle ?"
+                  aria-label="What you want to recycle ?"
                   aria-describedby="basic-addon2"
                 />
                 <span className="input-group-text p-3" id="basic-addon2">
@@ -52,7 +52,7 @@ const Header = () => {
                   <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/compare.svg" alt="compare" />
                     <p className="mb-0">
-                      Compare <br /> Products
+                      Recycled <br /> Products
                     </p>
                   </Link>
                 </div>
@@ -102,7 +102,7 @@ const Header = () => {
                       aria-expanded="false"
                     >
                       <img src="images/menu.svg" alt="Menu" />
-                      <span className='me-5 d-inline-block'> Shop Categories</span>
+                      <span className='me-5 d-inline-block'>Donate Product</span>
                     </button>
                     <ul
                       className="dropdown-menu"
@@ -110,17 +110,17 @@ const Header = () => {
                     >
                       <li>
                         <Link className="dropdown-item text-white" to=''>
-                          Action
+                          E-waste
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to=''>
-                          Another action
+                          Clothes
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to=''>
-                          Something else here
+                          Plastic Waste
                         </Link>
                       </li>
                     </ul>
