@@ -1,12 +1,10 @@
-import React from 'react'
-import Marquee from 'react-fast-marquee';
-import BlogCard from '../components/BlogCard';
-
+import React from "react";
+import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
 
 const Home = () => {
   return (
     <>
-
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -52,81 +50,99 @@ const Home = () => {
           </div>
         </div>
       </section>
-     
+
       <section className="famous-wrapper py-5 home-wrapper-2">
-          <div className="container-xxl">
-            <div className="row">
-              <div className="col-3">
-                <div className="famous-card position-relative">
-                  <img src="images/card-1.jpg" className='img-fluid' alt="" />
-                  <div className="famous-content position-absolute">
-                    <h5 className='text-dark'>Big Screen</h5>
-                    <h6 className='text-dark'>Smart Watch Series 7</h6>
-                    <p className='text-dark'>From $399 or $16.62/mo. for 24 mo.*</p>
-                  </div>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/card-1.jpg" className="img-fluid" alt="" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">
+                    From $399 or $16.62/mo. for 24 mo.*
+                  </p>
                 </div>
               </div>
-              <div className="col-3">
-                <div className="famous-card position-relative">
-                  <img src="images/card-2.jpg" className='img-fluid' alt="famous" />
-                  <div className="famous-content position-absolute">
-                    <h5 className='text-dark'>Studio Display</h5>
-                    <h6 className='text-dark'>600 nits of brightness</h6>
-                    <p className='text-dark'>27-inch 5K Retina display</p>
-                  </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/card-2.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio Display</h5>
+                  <h6 className="text-dark">600 nits of brightness</h6>
+                  <p className="text-dark">27-inch 5K Retina display</p>
                 </div>
               </div>
-              <div className="col-3">
-                <div className="famous-card position-relative">
-                  <img src="images/card-3.jpg" className='img-fluid' alt="famous" />
-                  <div className="famous-content position-absolute">
-                    <h5 className='text-dark'>SmartPhones</h5>
-                    <h6 className='text-dark'>SmartPhone 15 Pro</h6>
-                    <p className='text-dark'>Now in Green From $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
-                  </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/card-3.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">SmartPhones</h5>
+                  <h6 className="text-dark">SmartPhone 15 Pro</h6>
+                  <p className="text-dark">
+                    Now in Green From $999.00 or $41.62/mo. for 24 mo. Footnote*
+                  </p>
                 </div>
               </div>
-              <div className="col-3">
-                <div className="famous-card position-relative">
-                  <img src="images/card-4.jpg" className='img-fluid' alt="famous" />
-                  <div className="famous-content position-absolute">
-                    <h5 className='text-dark'>Home Speakers</h5>
-                    <h6 className='text-dark'>Room -filling Sound.</h6>
-                    <p className='text-dark'>From $699 or $116.58/mo. for 12 mo.*</p>
-                  </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/card-4.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Home Speakers</h5>
+                  <h6 className="text-dark">Room -filling Sound.</h6>
+                  <p className="text-dark">
+                    From $699 or $116.58/mo. for 12 mo.*
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
       <section className="marque-wrapper py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <div className="marquee-inner-wrapper card-wrapper">
-                <Marquee className='d-flex'>
-                  <div className='mx-4 ww-25'>
+                <Marquee className="d-flex">
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-01.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-02.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-03.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-04.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-05.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-06.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-07.png" alt="Brand" />
                   </div>
-                  <div className='mx-4 ww-25'>
+                  <div className="mx-4 ww-25">
                     <img src="images/brand-08.png" alt="Brand" />
                   </div>
                 </Marquee>
@@ -139,20 +155,27 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h3 className='section-heading'>Our Latest Blogs</h3>
+              <h3 className="section-heading">Our Latest Blogs</h3>
             </div>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
           </div>
         </div>
-
       </section>
-      
     </>
   );
-}
+};
 
-export default Home
+export default Home;

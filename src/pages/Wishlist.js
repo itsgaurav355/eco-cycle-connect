@@ -10,20 +10,69 @@ const Wishlist = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
-              <div className="wishlist-card position-realtive">
+              <div className="wishlist-card position-relative">
                 <img
-                  src=""
+                  src="images/cross.svg"
                   alt="cross"
                   className="position-absolute cross img-fluid"
                 />
                 <div className="wishlist-card-image">
-                  <img src="images/card-1.jpg" className="img-fluid w-100" alt="watch" />
+                  <img
+                    src="images/watch.jpg"
+                    className="img-fluid w-100"
+                    alt="watch"
+                  />
                 </div>
+              </div>
+              <div className="py-3 px-3">
+                <h5 className="title">
+                  Latest Smartwatch for the kids with wifi and health boosts
+                </h5>
+                <h6 className="price">$ 100</h6>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="wishlist-card position-relative">
+                <img
+                  src="images/cross.svg"
+                  alt="cross"
+                  className="position-absolute cross img-fluid"
+                />
+                <div className="wishlist-card-image">
+                  <img
+                    src="images/watch.jpg"
+                    className="img-fluid w-100"
+                    alt="watch"
+                  />
                 </div>
-                <div className="py-3 px-3">
-                  <h5 className="title"></h5>
-                  <h6 className="price">$ 100</h6>
-               
+              </div>
+              <div className="py-3 px-3">
+                <h5 className="title">
+                  Latest Smartwatch for the kids with wifi and health boosts
+                </h5>
+                <h6 className="price">$ 100</h6>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="wishlist-card position-relative">
+                <img
+                  src="images/cross.svg"
+                  alt="cross"
+                  className="position-absolute cross img-fluid"
+                />
+                <div className="wishlist-card-image">
+                  <img
+                    src="images/watch.jpg"
+                    className="img-fluid w-100"
+                    alt="watch"
+                  />
+                </div>
+              </div>
+              <div className="py-3 px-3">
+                <h5 className="title">
+                  Latest Smartwatch for the kids with wifi and health boosts
+                </h5>
+                <h6 className="price">$ 100</h6>
               </div>
             </div>
           </div>
@@ -33,4 +82,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export default Wishlist;
