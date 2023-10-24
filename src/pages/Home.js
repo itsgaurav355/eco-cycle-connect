@@ -6,9 +6,7 @@ import BlogCard from '../components/BlogCard';
 const Home = () => {
   return (
     <>
-      {/* <section className="home-wrapper-1 py-5">
-      
-      </section> */}
+
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -60,11 +58,41 @@ const Home = () => {
             <div className="row">
               <div className="col-3">
                 <div className="famous-card position-relative">
-                  <img src="images/dress2.png" alt="" />
+                  <img src="images/card-1.jpg" className='img-fluid' alt="" />
                   <div className="famous-content position-absolute">
-                    <h5>Green Arena</h5>
-                    <h6>Women Dress</h6>
-                    <p>From $399 or $16.62/mo. for 24 mo.*</p>
+                    <h5 className='text-dark'>Big Screen</h5>
+                    <h6 className='text-dark'>Smart Watch Series 7</h6>
+                    <p className='text-dark'>From $399 or $16.62/mo. for 24 mo.*</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="famous-card position-relative">
+                  <img src="images/card-2.jpg" className='img-fluid' alt="famous" />
+                  <div className="famous-content position-absolute">
+                    <h5 className='text-dark'>Studio Display</h5>
+                    <h6 className='text-dark'>600 nits of brightness</h6>
+                    <p className='text-dark'>27-inch 5K Retina display</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="famous-card position-relative">
+                  <img src="images/card-3.jpg" className='img-fluid' alt="famous" />
+                  <div className="famous-content position-absolute">
+                    <h5 className='text-dark'>SmartPhones</h5>
+                    <h6 className='text-dark'>SmartPhone 15 Pro</h6>
+                    <p className='text-dark'>Now in Green From $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="famous-card position-relative">
+                  <img src="images/card-4.jpg" className='img-fluid' alt="famous" />
+                  <div className="famous-content position-absolute">
+                    <h5 className='text-dark'>Home Speakers</h5>
+                    <h6 className='text-dark'>Room -filling Sound.</h6>
+                    <p className='text-dark'>From $699 or $116.58/mo. for 12 mo.*</p>
                   </div>
                 </div>
               </div>
