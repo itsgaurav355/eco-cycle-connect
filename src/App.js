@@ -18,7 +18,8 @@ import ShippingPolicy from './pages/ShippingPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import SingleProductPage from './pages/SingleProductPage';
-
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 function App() {
   return (
     <>
@@ -34,6 +35,8 @@ function App() {
             <Route path='forgot-password' element={<ForgotPass/>}></Route>
             <Route path='login' element={ <Login/> }></Route>
             <Route path='blogs' element={<Blog/>}></Route>
+            <Route path='cart' element={<Cart/>}></Route>
+            <Route path='checkout' element={<Checkout/>}></Route>
             <Route path='blog/:id' element={<SingleBlog/>}></Route>
             <Route path='donate-product' element={ <DonateProduct/> } ></Route>
             <Route path='signup' element={ <Signup/> }></Route>

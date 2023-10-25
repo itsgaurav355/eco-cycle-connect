@@ -4,15 +4,26 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
+import Color from "../components/Color";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const SingleProductPage = () => {
   const props = {
-    width: 600,
-    height: 500,
-    zoomWidth: 500,
+    width: 400,
+    height: 600,
+    zoomWidth: 600,
     img: "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?cs=srgb&dl=pexels-joey-nguy%E1%BB%85n-2113994.jpg&fm=jpg",
   };
   const [orderedProduct, setOrderedProduct] = useState(true);
+  const copyToClipboard = (text) => {
+    console.log("text", text);
+    var textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+  };
   return (
     <>
       <Meta title={"Product Name"} />
@@ -74,28 +85,105 @@ const SingleProductPage = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">( 2 Reviews)</p>
+                    <p className="mb-0 t-review">( 2 Reviews)</p>
                   </div>
-                  <a href="#review">Write a Review</a>
+                  <a className="review-btn" href="#review">
+                    Write a Review
+                  </a>
                 </div>
-                <div className="border-bottom">
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>ABC : </h3>
-                    <p>GFd </p>
+                <div className="border-bottom py-3">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type : </h3>
+                    <p className="product-data">Watch </p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>ABC : </h3>
-                    <p>GFd </p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand : </h3>
+                    <p className="product-data">Havells </p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>ABC : </h3>
-                    <p>GFd </p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Category : </h3>
+                    <p className="product-data">Watch </p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>ABC : </h3>
-                    <p>GFd </p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tags : </h3>
+                    <p className="product-data">Watch </p>
                   </div>
-                  <div></div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availability : </h3>
+                    <p className="product-data">In Stock </p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column  mt-2 mb-3">
+                    <h3 className="product-heading">Size : </h3>
+                    <div className="d-flex felx-wrap gap-15">
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        S
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        M
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XL
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XXL
+                      </span>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Color : </h3>
+                    <Color></Color>
+                  </div>
+                  <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
+                    <h3 className="product-heading">Quantity : </h3>
+                    <div className="">
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        min={1}
+                        max={10}
+                        className="form-control"
+                        style={{ width: "70px" }}
+                      />
+                    </div>
+                    <div className="d-flex- align-items-center gap-30 ms-5">
+                      <div className="mt-0 d-flex justify-content-center gap-15 align-items-center">
+                        <button className="button border-0">Add to Cart</button>
+                        <button to="" className="button border-0 signup">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="">
+                        <AiOutlineHeart className="fs-5 me-2" />
+                        Add to Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">Shipping & Returns : </h3>
+                    <p className="product-data">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Beatae, doloribus! Quis cum voluptatibus ratione
+                      repudiandae accusamus inventore et aut illo!
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-3">
+                    <h3 className="product-heading">Product Link </h3>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={() => {
+                        copyToClipboard(
+                          "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?cs=srgb&dl=pexels-joey-nguy%E1%BB%85n-2113994.jpg&fm=jpg"
+                        );
+                      }}
+                    >
+                      Copy Product Link
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
